@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MMHDemo</RootNamespace>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="5.0.0" />
+    <PackageReference Include="Abp.Web.Common" Version="5.0.0" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Stripe.net" Version="27.16.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0-preview2.19523.17" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MMHDemo.Core.Shared\MMHDemo.Core.Shared.csproj" />
+  </ItemGroup>
+</Project>

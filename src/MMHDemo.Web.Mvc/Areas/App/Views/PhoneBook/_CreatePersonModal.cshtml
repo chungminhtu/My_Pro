@@ -1,0 +1,28 @@
+﻿@using MMHDemo.Web.Areas.App.Models.Common.Modals
+@using MMHDemo.PersonConsts
+
+@Html.Partial("~/Areas/App/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("CreateNewPerson")))
+
+<div class="modal-body">
+    <form role="form" novalidate class="form-validation">
+        <div class="form-group form-md-line-input form-md-floating-label no-hint">
+            <label>@L("Name")</label>
+            <input class="form-control" type="text" name="Name" required maxlength="@PersonConsts.MaxNameLength">
+
+        </div>
+
+        <div class="form-group form-md-line-input form-md-floating-label no-hint">
+            <label>@L("Surname")</label>
+            <input type="text" name="Surname" class="form-control" required maxlength="@PersonConsts.MaxSurnameLength">
+            
+        </div>
+
+        <div class="form-group form-md-line-input form-md-floating-label no-hint">
+            <label>@L("EmailAddress")</label>
+            <input type="email" name="EmailAddress" class="form-control" maxlength="@PersonConsts.MaxEmailAddressLength">
+            
+        </div>
+    </form>
+</div>
+
+@Html.Partial("~/Areas/App/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
