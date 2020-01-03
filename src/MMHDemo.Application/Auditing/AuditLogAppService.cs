@@ -17,6 +17,7 @@ using MMHDemo.Authorization;
 using MMHDemo.Authorization.Users;
 using MMHDemo.Dto;
 using MMHDemo.EntityHistory;
+using MMHDemo.IPersonAppServiceInfo;
 using MMHDemo.MMHDemoAppServiceBaseInfo;
 using EntityHistoryHelper = MMHDemo.EntityHistory.EntityHistoryHelper;
 

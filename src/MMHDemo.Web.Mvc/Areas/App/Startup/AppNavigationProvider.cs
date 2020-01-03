@@ -21,13 +21,15 @@ namespace MMHDemo.Web.Areas.App.Startup
                         icon: "flaticon-line-graph",
                         permissionDependency: new SimplePermissionDependency(AppPermissions.Pages_Administration_Host_Dashboard)
                     )
-                ).AddItem(new MenuItemDefinition(
+                )
+                .AddItem(new MenuItemDefinition(
                         AppPageNames.Host.PhoneBook,
                         L("PhoneBook"),
                         url: "App/PhoneBook",
                         icon: "glyphicon glyphicon-book"
                     )
-                ).AddItem(new MenuItemDefinition(
+                )
+                .AddItem(new MenuItemDefinition(
                         AppPageNames.Common.Emp1s,
                         L("Emp1s"),
                         url: "App/Emp1s",

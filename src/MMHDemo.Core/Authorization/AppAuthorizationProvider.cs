@@ -26,6 +26,9 @@ namespace MMHDemo.Authorization
 
         public override void SetPermissions(IPermissionDefinitionContext context)
         {
+
+            
+
             //COMMON PERMISSIONS (FOR BOTH OF TENANTS AND HOST)
 
             var pages = context.GetPermissionOrNull(AppPermissions.Pages) ?? context.CreatePermission(AppPermissions.Pages, L("Pages"));
@@ -37,6 +40,10 @@ namespace MMHDemo.Authorization
 
 
             pages.CreateChildPermission(AppPermissions.Pages_DemoUiComponents, L("DemoUiComponents"));
+           
+
+
+
 
             var administration = pages.CreateChildPermission(AppPermissions.Pages_Administration, L("Administration"));
 

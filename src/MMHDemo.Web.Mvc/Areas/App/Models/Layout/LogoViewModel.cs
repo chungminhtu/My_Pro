@@ -20,7 +20,7 @@ namespace MMHDemo.Web.Areas.App.Models.Layout
 
             if (LoginInformations?.Tenant?.LogoId == null)
             {
-                return appPath + $"Common/Images/app-logo-on-{logoSkin}.svg";
+                return appPath + $"Common/Images/logo.jpg";
             }
 
             //id parameter is used to prevent caching only.
