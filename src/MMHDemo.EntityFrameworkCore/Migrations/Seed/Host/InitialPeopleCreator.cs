@@ -25,9 +25,9 @@ namespace Acme.PhoneBookDemo.Migrations.Seed.Host
                 _context.Persons.Add(
                     new Person
                     {
-                        Name = "Douglas",
-                        Surname = "Adams",
-                        EmailAddress = "douglas.adams@fortytwo.com"
+                        Name = "Rafiul",
+                        Surname = "Islam",
+                        EmailAddress = "rafi.cse.ru@gmail.com"
                     });
             }
 
@@ -37,9 +37,9 @@ namespace Acme.PhoneBookDemo.Migrations.Seed.Host
                 _context.Persons.Add(
                     new Person
                     {
-                        Name = "Isaac",
-                        Surname = "Asimov",
-                        EmailAddress = "isaac.asimov@foundation.org"
+                        Name = "Abu",
+                        Surname = "Hanif",
+                        EmailAddress = "hanif@gmail.com"
                     });
             }
         }

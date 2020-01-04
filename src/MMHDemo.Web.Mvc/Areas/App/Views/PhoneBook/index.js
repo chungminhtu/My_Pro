@@ -1,17 +1,4 @@
-﻿(function () {
-    var _createPersonModal = new app.ModalManager({
-        viewUrl: abp.appPath + 'App/PhoneBook/CreatePersonModal',
-        scriptUrl: abp.appPath + 'view-resources/Areas/App/Views/PhoneBook/_CreatePersonModal.js',
-        modalClass: 'CreatePersonModal'
-    });
-
-    $('#CreateNewPersonButton').click(function (e) {
-        e.preventDefault();
-        _createPersonModal.open();
-    });
-})();
-
-var _personService = abp.services.app.person;
+﻿var _personService = abp.services.app.person;
 
 $('#AllPeopleList button.delete-person').click(function (e) {
     e.preventDefault();
@@ -33,5 +20,3 @@ $('#AllPeopleList button.delete-person').click(function (e) {
         }
     );
 });
-
-

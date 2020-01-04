@@ -19,6 +19,8 @@ namespace MMHDemo.IPersonAppServiceInfo
         ListResultDto<PersonListDto> GetPeople(GetPeopleInput input);
 
         Task CreatePerson(CreatePersonInput input);
+        Task DeletePerson(EntityDto input);
+
 
     }
 }

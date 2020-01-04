@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using MMHDemo.IPersonAppServiceInfo;
 using System.Threading.Tasks;
+using Abp.Authorization;
+using MMHDemo.Authorization;
 
 namespace MMHDemo
 {
@@ -24,6 +26,12 @@ namespace MMHDemo
         public Task CreatePerson(CreatePersonInput input)
         {
             throw new NotImplementedException();
+        }
+
+        [AbpAuthorize(AppPermissions.Pages_Tenant_PhoneBook_DeletePerson)]
+        public async Task DeletePerson(EntityDto input)
+        {
+            await _personRepository.DeleteAsync(input.Id);
         }
 
         public ListResultDto<PersonListDto> GetPeople(GetPeopleInput input)

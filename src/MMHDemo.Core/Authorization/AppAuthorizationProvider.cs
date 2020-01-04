@@ -38,12 +38,11 @@ namespace MMHDemo.Authorization
             emp1s.CreateChildPermission(AppPermissions.Pages_Emp1s_Edit, L("EditEmp1"));
             emp1s.CreateChildPermission(AppPermissions.Pages_Emp1s_Delete, L("DeleteEmp1"));
 
+            //added by me 
+            var phonebook = pages.CreateChildPermission(AppPermissions.Pages_Tenant_PhoneBook, L("pages.PhoneBook"));
+            phonebook.CreateChildPermission(AppPermissions.Pages_Tenant_PhoneBook_DeletePerson, L("DeletePerson"));
 
             pages.CreateChildPermission(AppPermissions.Pages_DemoUiComponents, L("DemoUiComponents"));
-           
-
-
-
 
             var administration = pages.CreateChildPermission(AppPermissions.Pages_Administration, L("Administration"));
 
