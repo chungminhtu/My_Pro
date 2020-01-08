@@ -24,9 +24,11 @@ namespace MMHDemo.Web.Controllers
         {
             var output = _personAppService.GetPeople(input);
             var model = ObjectMapper.Map<IndexViewModel>(output);
+            model.Filter = input.Filter;
 
             return View(model);
         }
+
         public PartialViewResult CreatePersonModal()
         {
             return PartialView("_CreatePersonModal");
